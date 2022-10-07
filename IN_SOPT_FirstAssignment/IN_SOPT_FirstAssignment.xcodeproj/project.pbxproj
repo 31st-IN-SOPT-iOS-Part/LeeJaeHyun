@@ -13,6 +13,8 @@
 		A3D90FE628EFD3380097F5D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D90FE428EFD3380097F5D0 /* Main.storyboard */; };
 		A3D90FE828EFD33A0097F5D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D90FE728EFD33A0097F5D0 /* Assets.xcassets */; };
 		A3D90FEB28EFD33A0097F5D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D90FE928EFD33A0097F5D0 /* LaunchScreen.storyboard */; };
+		A3D90FF328EFD5B70097F5D0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D90FF228EFD5B70097F5D0 /* SecondViewController.swift */; };
+		A3D90FF728EFD5E90097F5D0 /* thirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D90FF628EFD5E90097F5D0 /* thirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A3D90FE728EFD33A0097F5D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D90FEA28EFD33A0097F5D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3D90FEC28EFD33A0097F5D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3D90FF228EFD5B70097F5D0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A3D90FF628EFD5E90097F5D0 /* thirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = thirdViewController.swift; path = ../thirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				A3D90FDE28EFD3380097F5D0 /* AppDelegate.swift */,
 				A3D90FE028EFD3380097F5D0 /* SceneDelegate.swift */,
 				A3D90FE228EFD3380097F5D0 /* ViewController.swift */,
+				A3D90FF228EFD5B70097F5D0 /* SecondViewController.swift */,
+				A3D90FF628EFD5E90097F5D0 /* thirdViewController.swift */,
 				A3D90FE428EFD3380097F5D0 /* Main.storyboard */,
 				A3D90FE728EFD33A0097F5D0 /* Assets.xcassets */,
 				A3D90FE928EFD33A0097F5D0 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3D90FF328EFD5B70097F5D0 /* SecondViewController.swift in Sources */,
 				A3D90FE328EFD3380097F5D0 /* ViewController.swift in Sources */,
+				A3D90FF728EFD5E90097F5D0 /* thirdViewController.swift in Sources */,
 				A3D90FDF28EFD3380097F5D0 /* AppDelegate.swift in Sources */,
 				A3D90FE128EFD3380097F5D0 /* SceneDelegate.swift in Sources */,
 			);
