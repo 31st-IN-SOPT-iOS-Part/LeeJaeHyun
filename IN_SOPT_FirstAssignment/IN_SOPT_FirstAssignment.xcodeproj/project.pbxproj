@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3A451A02913A05F00F55529 /* FriendTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A4519F2913A05F00F55529 /* FriendTabViewController.swift */; };
+		A3A451A22913A07800F55529 /* MyTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451A12913A07800F55529 /* MyTabViewController.swift */; };
+		A3A451A52913A1F000F55529 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A3A451A42913A1F000F55529 /* SnapKit */; };
+		A3A451A82913A20100F55529 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = A3A451A72913A20100F55529 /* Then */; };
+		A3A451AA2913A61C00F55529 /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451A92913A61C00F55529 /* ProfileModel.swift */; };
+		A3A451AC2913A93000F55529 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451AB2913A93000F55529 /* FriendTableViewCell.swift */; };
+		A3A451AE2913C4CA00F55529 /* FriendChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451AD2913C4CA00F55529 /* FriendChatViewController.swift */; };
+		A3A451B32913CA7200F55529 /* SelectPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451B22913CA7200F55529 /* SelectPhotoViewController.swift */; };
+		A3A451B52913CB6E00F55529 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451B42913CB6E00F55529 /* PhotoModel.swift */; };
+		A3A451BA2913CDC200F55529 /* SelectPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A451B92913CDC200F55529 /* SelectPhotoCollectionViewCell.swift */; };
 		A3D90FDF28EFD3380097F5D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D90FDE28EFD3380097F5D0 /* AppDelegate.swift */; };
 		A3D90FE128EFD3380097F5D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D90FE028EFD3380097F5D0 /* SceneDelegate.swift */; };
 		A3D90FE328EFD3380097F5D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D90FE228EFD3380097F5D0 /* ViewController.swift */; };
@@ -18,6 +28,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3A4519F2913A05F00F55529 /* FriendTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTabViewController.swift; sourceTree = "<group>"; };
+		A3A451A12913A07800F55529 /* MyTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabViewController.swift; sourceTree = "<group>"; };
+		A3A451A92913A61C00F55529 /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		A3A451AB2913A93000F55529 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		A3A451AD2913C4CA00F55529 /* FriendChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendChatViewController.swift; sourceTree = "<group>"; };
+		A3A451B22913CA7200F55529 /* SelectPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoViewController.swift; sourceTree = "<group>"; };
+		A3A451B42913CB6E00F55529 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		A3A451B92913CDC200F55529 /* SelectPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3D90FDB28EFD3380097F5D0 /* IN_SOPT_FirstAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IN_SOPT_FirstAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D90FDE28EFD3380097F5D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D90FE028EFD3380097F5D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,15 +53,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A451A52913A1F000F55529 /* SnapKit in Frameworks */,
+				A3A451A82913A20100F55529 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3A451AF2913C98100F55529 /* FriendChat */ = {
+			isa = PBXGroup;
+			children = (
+				A3A451AD2913C4CA00F55529 /* FriendChatViewController.swift */,
+				A3A4519F2913A05F00F55529 /* FriendTabViewController.swift */,
+				A3A451A92913A61C00F55529 /* ProfileModel.swift */,
+				A3A451AB2913A93000F55529 /* FriendTableViewCell.swift */,
+			);
+			path = FriendChat;
+			sourceTree = "<group>";
+		};
+		A3A451B12913CA4A00F55529 /* SelectPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				A3A451B22913CA7200F55529 /* SelectPhotoViewController.swift */,
+				A3A451B42913CB6E00F55529 /* PhotoModel.swift */,
+				A3A451B92913CDC200F55529 /* SelectPhotoCollectionViewCell.swift */,
+			);
+			path = SelectPhoto;
+			sourceTree = "<group>";
+		};
 		A3D90FD228EFD3380097F5D0 = {
 			isa = PBXGroup;
 			children = (
+				A3A451B12913CA4A00F55529 /* SelectPhoto */,
+				A3A451AF2913C98100F55529 /* FriendChat */,
 				A3D90FDD28EFD3380097F5D0 /* IN_SOPT_FirstAssignment */,
 				A3D90FDC28EFD3380097F5D0 /* Products */,
 			);
@@ -60,6 +103,7 @@
 		A3D90FDD28EFD3380097F5D0 /* IN_SOPT_FirstAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				A3A451A12913A07800F55529 /* MyTabViewController.swift */,
 				A3D90FDE28EFD3380097F5D0 /* AppDelegate.swift */,
 				A3D90FE028EFD3380097F5D0 /* SceneDelegate.swift */,
 				A3D90FE228EFD3380097F5D0 /* ViewController.swift */,
@@ -89,6 +133,10 @@
 			dependencies = (
 			);
 			name = IN_SOPT_FirstAssignment;
+			packageProductDependencies = (
+				A3A451A42913A1F000F55529 /* SnapKit */,
+				A3A451A72913A20100F55529 /* Then */,
+			);
 			productName = IN_SOPT_FirstAssignment;
 			productReference = A3D90FDB28EFD3380097F5D0 /* IN_SOPT_FirstAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +165,10 @@
 				Base,
 			);
 			mainGroup = A3D90FD228EFD3380097F5D0;
+			packageReferences = (
+				A3A451A32913A1F000F55529 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A3A451A62913A20100F55529 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = A3D90FDC28EFD3380097F5D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -144,11 +196,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A451AC2913A93000F55529 /* FriendTableViewCell.swift in Sources */,
 				A3D90FF328EFD5B70097F5D0 /* SecondViewController.swift in Sources */,
+				A3A451AE2913C4CA00F55529 /* FriendChatViewController.swift in Sources */,
 				A3D90FE328EFD3380097F5D0 /* ViewController.swift in Sources */,
+				A3A451A02913A05F00F55529 /* FriendTabViewController.swift in Sources */,
 				A3D90FF728EFD5E90097F5D0 /* thirdViewController.swift in Sources */,
+				A3A451B52913CB6E00F55529 /* PhotoModel.swift in Sources */,
+				A3A451BA2913CDC200F55529 /* SelectPhotoCollectionViewCell.swift in Sources */,
 				A3D90FDF28EFD3380097F5D0 /* AppDelegate.swift in Sources */,
 				A3D90FE128EFD3380097F5D0 /* SceneDelegate.swift in Sources */,
+				A3A451B32913CA7200F55529 /* SelectPhotoViewController.swift in Sources */,
+				A3A451A22913A07800F55529 /* MyTabViewController.swift in Sources */,
+				A3A451AA2913A61C00F55529 /* ProfileModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +424,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3A451A32913A1F000F55529 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		A3A451A62913A20100F55529 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3A451A42913A1F000F55529 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3A451A32913A1F000F55529 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		A3A451A72913A20100F55529 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3A451A62913A20100F55529 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3D90FD328EFD3380097F5D0 /* Project object */;
 }

@@ -65,6 +65,19 @@ class ThirdViewController: UIViewController {
     @objc
     private func touchupCheckButton() {
         self.dismiss(animated: true, completion: nil)
+        presentToFriendTabVC()
+    }
+    
+    @objc
+    private func pushToFriendTabVC() {
+        guard let FriendTabVC = self.storyboard?.instantiateViewController(withIdentifier: "FriendTabVC") else {return}
+        
+        FriendTabVC.modalPresentationStyle = .overCurrentContext
+        FriendTabVC.modalTransitionStyle = .coverVertical
+        
+        FriendTabVC.view.alpha = 0.5
+        
+        self.present(FriendTabVC, animated: true)
         
     }
     

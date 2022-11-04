@@ -6,11 +6,12 @@
 //
 
 import UIKit
+import SnapKit
 
-class thirdViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     private let welcomeLabel: UILabel = {
-       let label = UILabel(frame: CGRect(x: 0, y: 300, width: 393, height: 30))
+       let label = UILabel()
         
         label.text = "000님"
         label.font = .boldSystemFont(ofSize: 17)
@@ -20,7 +21,7 @@ class thirdViewController: UIViewController {
     }()
     
     private let secondWelcomeLabel: UILabel = {
-       let label = UILabel(frame: CGRect(x: 0, y: 335, width: 393, height: 30))
+       let label = UILabel()
         
         label.text = "환영합니다"
         label.font = .boldSystemFont(ofSize: 17)
@@ -30,7 +31,7 @@ class thirdViewController: UIViewController {
     }()
     
     private let checkButton: UIButton = {
-       let button = UIButton(frame: CGRect(x: 20, y: 440, width: 355, height: 50))
+       let button = UIButton()
         
         button.setTitle("확인", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -51,12 +52,8 @@ class thirdViewController: UIViewController {
         
         view.backgroundColor = .white
         // Do any additional setup after loading the view.
+        layout()
         
-        let components: [Any] = [welcomeLabel, secondWelcomeLabel,checkButton]
-        
-        components.forEach {
-            view.addSubview($0 as! UIView)
-        }
         
     }
     
@@ -68,6 +65,46 @@ class thirdViewController: UIViewController {
     @objc
     private func touchupCheckButton() {
         self.dismiss(animated: true, completion: nil)
+        //presentToMyTabViewVC()
+    }
+    
+    @objc
+    private func pushToFriendTabVC() {
+        guard let FriendTabVC = self.storyboard?.instantiateViewController(withIdentifier: "FriendTabVC") else {return}
+        
+        FriendTabVC.modalPresentationStyle = .overCurrentContext
+        FriendTabVC.modalTransitionStyle = .coverVertical
+        
+        FriendTabVC.view.alpha = 0.5
+        
+        self.present(FriendTabVC, animated: true)
+        
+    }
+    
+}
+
+extension ThirdViewController {
+    
+    private func layout() {
+        [welcomeLabel, secondWelcomeLabel, checkButton].forEach {
+            view.addSubview($0)
+        }
+        
+        welcomeLabel.snp.makeConstraints {
+            $0.top.equalTo(self.view.safeAreaLayoutGuide).offset(300)
+            $0.trailing.leading.equalTo(self.view.safeAreaLayoutGuide)
+        }
+        
+        secondWelcomeLabel.snp.makeConstraints {
+            $0.top.equalTo(self.welcomeLabel.snp.bottom).offset(5)
+            $0.trailing.leading.equalTo(self.view.safeAreaLayoutGuide)
+        }
+        
+        checkButton.snp.makeConstraints {
+            $0.bottom.equalTo(self.secondWelcomeLabel.snp.bottom).offset(75)
+            $0.leading.trailing.equalTo(self.view.safeAreaLayoutGuide).inset(17)
+            $0.height.equalTo(50)
+        }
         
     }
     
